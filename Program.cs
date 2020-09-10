@@ -98,7 +98,7 @@ namespace shaders
 
         string getShaderCode(string fileName)
         {
-            // FILES MUST BE STORED IN THE bin/Debug FOLDER
+            // GLSL (OR SHADER) FILES MUST BE STORED IN THE bin/Debug FOLDER
 
             string code = "";
             using (StreamReader reader = new StreamReader(main_path+"/"+fileName, Encoding.UTF8)) {
