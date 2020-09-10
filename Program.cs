@@ -66,7 +66,7 @@ namespace shaders
                 triangle.render();
             } catch(Exception e1) {}
             GL.BindVertexArray(VertexArrayObject);
-            GL.DrawArrays(PrimitiveType.Triangles, 0, 3);
+            GL.DrawArrays(PrimitiveType.Triangles, 0, vertices.Length/3);
 
             Context.SwapBuffers();
             base.OnRenderFrame(e);
