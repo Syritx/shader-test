@@ -44,7 +44,6 @@ namespace shaders
 
         void start() {
             Run(60);
-            triangle = new Triangle(vertexShaderSource,fragmentShaderSource);
         }
 
         protected override void OnRenderFrame(FrameEventArgs e)
@@ -82,6 +81,7 @@ namespace shaders
         protected override void OnLoad(EventArgs e)
         {
             GL.ClearColor(0, 0, 0, 0);
+            triangle = new Triangle(vertexShaderSource, fragmentShaderSource);
             VertexBufferObject = GL.GenBuffer();
             base.OnLoad(e);
         }
